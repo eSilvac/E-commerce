@@ -1,0 +1,33 @@
+#nav{
+	margin-bottom: 35px;
+}
+
+#myCarousel{
+	margin-top: 35px;
+	margin-bottom: 35px;
+}
+
+.carousel-indicators {
+	height: 470px;
+}
+
+.thumbnail img{
+	height: 393px;
+}
+
+#cuadrados #box{
+	margin-bottom: 20px;
+}
+
+@media(min-width: 768px){
+	#cuadrados #box{
+		margin:10px 0;
+		width: 33.33%;
+	}
+}
+
+@media(min-width: 992px){
+	#myCarousel{
+		margin-top: 0px;
+	}
+}
