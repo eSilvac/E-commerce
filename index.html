@@ -2,12 +2,42 @@
 <html>
 <head>
 	<title>E-commerce</title>
+  <meta charset="utf-8">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="CSS/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
 <body>
+
+<script>
+$(document).ready(function(){
+    $(".nav-tabs a").click(function(){
+        $(this).tab('show');
+    });
+    $('.nav-tabs a').on('shown.bs.tab', function(event){
+        var x = $(event.target).text();         
+        var y = $(event.relatedTarget).text(); 
+        $(".act span").text(x);
+        $(".prev span").text(y);
+    });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+    $(".nav-tabs a").click(function(){
+        $(this).tab('show');
+    });
+    $('.nav-tabs a').on('shown.bs.tab', function(event){
+        var x = $(event.target).text();         
+        var y = $(event.relatedTarget).text(); 
+        $(".act span").text(x);
+        $(".prev span").text(y);
+    });
+});
+</script>
+
 <nav class="navbar navbar-inverse" id="nav">
   <div class="container">
     <div class="navbar-header">
@@ -50,7 +80,7 @@
   	  		<h1>Categorias</h1>
   	  	  <a href="#" class="list-group-item active">
   	  	    Todos
-            <span class="badge">NN</span>
+            <span class="badge">64</span>
   	  	  </a>
   	  	  <a href="#" class="list-group-item">
             Comerciales
@@ -58,12 +88,24 @@
           </a>
   	  	  <a href="#" class="list-group-item">
             Privados
-            <span class="badge">NN</span>
+            <span class="badge">7</span>
           </a>
-  	  	  <a href="#" class="list-group-item">Helicopteros</a>
-  	  	  <a href="#" class="list-group-item">De Coleccion</a>
-          <a href="#" class="list-group-item">Ligero</a>
-          <a href="#" class="list-group-item">Militares</a>
+  	  	  <a href="#" class="list-group-item">
+            Helicopteros
+            <span class="badge">17</span>
+          </a>
+  	  	  <a href="#" class="list-group-item">
+            De Coleccion
+            <span class="badge">3</span>
+          </a>
+          <a href="#" class="list-group-item">
+            Ligero
+            <span class="badge">23</span>
+            </a>
+          <a href="#" class="list-group-item">
+            Militares
+            <span class="badge">0</span>
+          </a>
   	  	</div>
   	  </div>
 
@@ -138,7 +180,7 @@
                   <a href="#" class="btn btn-primary" role="button">Comprar
                     <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
                   </a>
-                  <a href="#" class="btn btn-default" role="button" data-toggle="modal" data-target="#ventana">Detalles</a>
+                  <a href="#" class="btn btn-default" role="button" data-toggle="modal" data-target="#ventana777">Detalles</a>
                 </p>
               </div>
             </div>  
@@ -154,7 +196,7 @@
                   <a href="#" class="btn btn-primary" role="button">Comprar
                     <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
                   </a> 
-                  <a href="#" class="btn btn-default" role="button" data-toggle="modal" data-target="#ventana">Detalles</a>
+                  <a href="#" class="btn btn-default" role="button" data-toggle="modal" data-target="#ventana787">Detalles</a>
                 </p>
               </div>
             </div>  
@@ -170,7 +212,7 @@
                   <a href="#" class="btn btn-primary" role="button">Comprar
                   <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
                   </a> 
-                  <a href="#" class="btn btn-default" role="button" data-toggle="modal" data-target="#ventana">Detalles</a>
+                  <a href="#" class="btn btn-default" role="button" data-toggle="modal" data-target="#ventanaG650">Detalles</a>
                 </p>
               </div>
             </div>  
@@ -185,7 +227,7 @@
                   <a href="#" class="btn btn-primary" role="button">Comprar
                     <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
                   </a> 
-                  <a href="#" class="btn btn-default" role="button" data-toggle="modal" data-target="#ventana">Detalles</a>
+                  <a href="#" class="btn btn-default" role="button" data-toggle="modal" data-target="#ventana8X">Detalles</a>
                 </p>
               </div>
             </div>  
@@ -193,6 +235,7 @@
         </div>
   	  </div>
   	</div>
+
     <div class="modal fade" id="ventana350" role="dialog">
      <div class="modal-dialog">
         <div class="modal-content">
@@ -201,21 +244,294 @@
             <h2 class="modal-title">Airbus A350XWB</h2>
           </div>
           <div class="modal-body">
+            <div class="alert alert-warning" role="alert"><strong>Atencion</strong>, se demora 3 Años en entrega.</div>
             <div class="row">
               <div class="col-xs-6">
                 <img src="Images/A350.jpg" alt="A350 ventana" class="img-thumbnail">
               </div>
+
               <div class="col-xs-6">
-                <p class="lead">Precio:<strong>304,8M US$</strong></p>
+                <p>Precio:<strong>304,8M US$</strong></p>
+                <p>Clasificacion:
+                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                <span class="glyphicon glyphicon-star" aria-hidden="true"></span> 
+                </p>
+                <p>
+                  <span class="label label-primary">Airbus</span>
+                  <span class="label label-default">Comercial</span>
+                </p>  
+                <ins class="text-info">Agregar a Canasta<span class="glyphicon glyphicon-star" aria-hidden="true"></span></ins>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12">
+                <ul class="nav nav-tabs">
+                  <li class="active"><a href="#menu1">Descripcion</a></li>
+                  <li><a href="#menu2">Comentarios</a></li>
+                </ul>
+                <div class="tab-content">
+                  <div id="menu1" class="tab-pane fade in active">
+                    <p id="comenydes">Un avion comercial a reacción de fuselaje ancho fabricada por Airbus. El A350 es la primera aeronave diseñada por Airbus en la que tanto el fuselaje como las estructuras del ala están formadas principalmente por materiales compuestos. Puede transportar entre 280 a 366 pasajeros, en configuración de tres clases, dependiendo de la variante, con un alcance maximo de 19.100 Kilometros y velocidad de Mach 0.85(903Km/h).</p>
+                  </div>
+                  <div id="menu2" class="tab-pane fade">
+                    <div class="panel panel-default" id="comenydes">
+                      <div class="panel-heading">Boeing comento hace 1 mes</div>
+                      <div class="panel-body">horrible avion, deben ser problemas de fabrica...</div>
+                    </div>
+                    <textarea class="form-control" rows="3" placeholder="Ingresa tu comentario."></textarea>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary">Comprar</button>
           </div>
         </div>  
       </div>
     </div>
+
+    <div class="modal fade" id="ventana777" role="dialog">
+     <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h2 class="modal-title">Boeing 777</h2>
+          </div>
+          <div class="modal-body">
+            <div class="alert alert-info" role="alert"><strong>Atencion</strong>, Tenenmos entrega INMEDIATA.</div>
+            <div class="row">
+              <div class="col-xs-6">
+                <img src="Images/B777.jpg" alt="b777 ventana" class="img-thumbnail">
+              </div>
+
+              <div class="col-xs-6">
+                <p>Precio:<strong>283,3M US$</strong></p>
+                <p>Clasificacion:
+                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span> 
+                </p>
+                <p>
+                  <span class="label label-primary">Boeing</span>
+                  <span class="label label-default">Comercial</span>
+                </p>  
+                <ins class="text-info">Agregar a Canasta<span class="glyphicon glyphicon-star" aria-hidden="true"></span></ins>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12">
+                <ul class="nav nav-tabs">
+                  <li class="active"><a href="#menu1">Descripcion</a></li>
+                  <li><a href="#menu2">Comentarios</a></li>
+                </ul>
+                <div class="tab-content">
+                  <div id="menu1" class="tab-pane fade in active">
+                    <p id="comenydes">Un avión comercial de reacción, bimotor, de largo alcance y fuselaje ancho fabricado por la compañía estadounidense Boeing Commercial Airplanes. Es el avión birreactor más grande del mundo y conocido frecuentemente como el «Triple Siete».Tiene capacidad para transportar más de 500 pasajeros y tiene un alcance hasta de 17.370 km.El 777 se ha convertido en uno de los modelos más vendidos de su fabricante. Debido al aumento del coste del combustible.</p>
+                  </div>
+                  <div id="menu2" class="tab-pane fade">
+                    <div class="panel panel-default" id="comenydes">
+                      <div class="panel-heading">Boeing cosdadmento hace 1 mes</div>
+                      <div class="panel-body">horrisdavion, deben ser problemas de fabrica...</div>
+                    </div>
+                    <textarea class="form-control" rows="3" placeholder="Ingresa tu comentario."></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary">Comprar</button>
+          </div>
+        </div>  
+      </div>
+    </div>
+
+    <div class="modal fade" id="ventana787" role="dialog">
+     <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h2 class="modal-title">Boeing 787-DreamLiner</h2>
+          </div>
+          <div class="modal-body">
+            <div class="alert alert-danger" role="danger"><strong>Atencion</strong>, Por el momento no hay venta de ningun modelo.</div>
+            <div class="row">
+              <div class="col-xs-6">
+                <img src="Images/Boeing787.jpg" alt="b787 ventana" class="img-thumbnail">
+              </div>
+
+              <div class="col-xs-6">
+                <p>Precio:<strong>297,5M US$</strong></p>
+                <p>Clasificacion:
+                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                <span class="glyphicon glyphicon-star" aria-hidden="true"></span> 
+                </p>
+                <p>
+                  <span class="label label-primary">Boeing</span>
+                  <span class="label label-default">Comercial</span>
+                </p>  
+                <ins class="text-info">Agregar a Canasta<span class="glyphicon glyphicon-star" aria-hidden="true"></span></ins>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12">
+                <ul class="nav nav-tabs">
+                  <li class="active"><a href="#menu1">Descripcion</a></li>
+                  <li><a href="#menu2">Comentarios</a></li>
+                </ul>
+                <div class="tab-content">
+                  <div id="menu1" class="tab-pane fade in active">
+                    <p id="comenydes">El Boeing 787, apodado «Dreamliner», es un avión de pasajeros de tamaño medio y fuselaje ancho desarrollado por el fabricante estadounidense Boeing Commercial Airplanes. La aeronave, de doble pasillo, puede transportar 323 pasajeros, viaja a una velocidad de Mach 0,85(903Km/h) y tiene un rango maximo de 15.700Km </p>
+                  </div>
+                  <div id="menu2" class="tab-pane fade">
+                    <div class="panel panel-default" id="comenydes">
+                      <div class="panel-heading">Boeing comento hace 1 mes</div>
+                      <div class="panel-body">horrible avion, deben ser problemas de fabrica...</div>
+                    </div>
+                    <textarea class="form-control" rows="3" placeholder="Ingresa tu comentario."></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Comprar</button>
+          </div>
+        </div>  
+      </div>
+    </div>
+
+    <div class="modal fade" id="ventanaG650" role="dialog">
+     <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h2 class="modal-title">Gulfstream G650</h2>
+          </div>
+          <div class="modal-body">
+            <div class="alert alert-warning" role="alert"><strong>Solo se entrega por pedido.</strong></div>
+            <div class="row">
+              <div class="col-xs-6">
+                <img src="Images/G650.jpg" alt="G650ventana" class="img-thumbnail">
+              </div>
+
+              <div class="col-xs-6">
+                <p>Precio:<strong>65,5M US$</strong></p>
+                <p>Clasificacion:
+                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span> 
+                </p>
+                <p>
+                  <span class="label label-warning">Gulfstream Aerospace</span>
+                  <span class="label label-default">Privado</span>
+                </p>  
+                <ins class="text-info">Agregar a Canasta<span class="glyphicon glyphicon-star" aria-hidden="true"></span></ins>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12">
+                <ul class="nav nav-tabs">
+                  <li class="active"><a href="#menu1">Descripcion</a></li>
+                  <li><a href="#menu2">Comentarios</a></li>
+                </ul>
+                <div class="tab-content">
+                  <div id="menu1" class="tab-pane fade in active">
+                    <p id="comenydes">La tecnología del avión privado G650 es la más avanzada en el cielo. Su cabina de mando Planeview II™ viene equipada con el sistema de administración de vuelo, el modo de descenso de emergencia automático, el radar meteorológico 3-D, controles de vuelo avanzados; una completa variedad de sofisticadas herramientas tecnológicas de última generación para mejorar la conciencia situacional del piloto y aumentar su seguridad. Solo exiten 51 unidades, tiene un rango de 12,960 Kms y una velocidad maxima de Mach 0.925 (982Km/h)</p>
+                  </div>
+                  <div id="menu2" class="tab-pane fade">
+                    <div class="panel panel-default" id="comenydes">
+                      <div class="panel-heading">Boeing comento hace 1 mes</div>
+                      <div class="panel-body">horrible avion, deben ser problemas de fabrica...</div>
+                    </div>
+                    <textarea class="form-control" rows="3" placeholder="Ingresa tu comentario."></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Comprar</button>
+          </div>
+        </div>  
+      </div>
+    </div>
+    
+    <div class="modal fade" id="ventana8X" role="dialog">
+     <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h2 class="modal-title">Dassault Falcon 8X</h2>
+          </div>
+          <div class="modal-body">
+            <div class="alert alert-warning" role="alert"><strong>Solo se entrega por pedido.</strong></div>
+            <div class="row">
+              <div class="col-xs-6">
+                <img src="Images/Falcon8X.jpg" alt="8xventana" class="img-thumbnail">
+              </div>
+
+              <div class="col-xs-6">
+                <p>Precio:<strong>57.5M US$</strong></p>
+                <p>Clasificacion:
+                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span> 
+                </p>
+                <p>
+                  <span class="label label-warning">Dassault Aviation</span>
+                  <span class="label label-default">Privado</span>
+                </p>  
+                <ins class="text-info">Agregar a Canasta<span class="glyphicon glyphicon-star" aria-hidden="true"></span></ins>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12">
+                <ul class="nav nav-tabs">
+                  <li class="active"><a href="#menu1">Descripcion</a></li>
+                  <li><a href="#menu2">Comentarios</a></li>
+                </ul>
+                <div class="tab-content">
+                  <div id="menu1" class="tab-pane fade in active">
+                    <p id="comenydes">El Falcon 8X cuenta con la cabina más larga de cualquier avión Falcon, extendiéndose más de 42 pies, más un alcance de más de 7,400 millas náuticas (11,945 km) y alcanza una velocidad de Mach 0.90 (980Km/h).  Derivado del 7X, el nuevo avión todavía está en desarrollo, con el primer vuelo programado para principios del próximo año y con las entregas programadas para el 2016.</p>
+                  </div>
+                  <div id="menu2" class="tab-pane fade">
+                    <div class="panel panel-default" id="comenydes">
+                      <div class="panel-heading">Boeing comento hace 1 mes</div>
+                      <div class="panel-body">horrible avion, deben ser problemas de fabrica...</div>
+                    </div>
+                    <textarea class="form-control" rows="3" placeholder="Ingresa tu comentario."></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Comprar</button>
+          </div>
+        </div>  
+      </div>
+    </div>
+
+
   </div>
 </body>
 </html>
