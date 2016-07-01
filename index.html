@@ -9,35 +9,6 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
 <body>
-
-<script>
-$(document).ready(function(){
-    $(".nav-tabs a").click(function(){
-        $(this).tab('show');
-    });
-    $('.nav-tabs a').on('shown.bs.tab', function(event){
-        var x = $(event.target).text();         
-        var y = $(event.relatedTarget).text(); 
-        $(".act span").text(x);
-        $(".prev span").text(y);
-    });
-});
-</script>
-
-<script>
-$(document).ready(function(){
-    $(".nav-tabs a").click(function(){
-        $(this).tab('show');
-    });
-    $('.nav-tabs a').on('shown.bs.tab', function(event){
-        var x = $(event.target).text();         
-        var y = $(event.relatedTarget).text(); 
-        $(".act span").text(x);
-        $(".prev span").text(y);
-    });
-});
-</script>
-
 <nav class="navbar navbar-inverse" id="nav">
   <div class="container">
     <div class="navbar-header">
@@ -77,7 +48,7 @@ $(document).ready(function(){
   	    </div>
 
   	  	<div class="list-group">
-  	  		<h1>Categorias</h1>
+  	  		<h1>Categorías</h1>
   	  	  <a href="#" class="list-group-item active">
   	  	    Todos
             <span class="badge">64</span>
@@ -91,11 +62,11 @@ $(document).ready(function(){
             <span class="badge">7</span>
           </a>
   	  	  <a href="#" class="list-group-item">
-            Helicopteros
+            Helicópteros
             <span class="badge">17</span>
           </a>
   	  	  <a href="#" class="list-group-item">
-            De Coleccion
+            De Colección
             <span class="badge">3</span>
           </a>
           <a href="#" class="list-group-item">
@@ -138,7 +109,7 @@ $(document).ready(function(){
   	  	    <div class="item">
   	  	      <img src="Images/roulet3.jpg" alt="Roulet3">
               <div class="carousel-caption">
-                <h1>Helicopteros</h1>
+                <h1>Helicópteros</h1>
     	  	    </div>
             </div>
   	  	  </div>
@@ -217,7 +188,6 @@ $(document).ready(function(){
               </div>
             </div>  
           </div>
-
           <div class="col-xs-6 col-sm-4 col-md-4" id="box">
             <div class="thumbnail">
               <img src="Images/Falcon8X.jpg" alt="Falcon8X">
@@ -237,14 +207,14 @@ $(document).ready(function(){
   	</div>
 
     <div class="modal fade" id="ventana350" role="dialog">
-     <div class="modal-dialog">
+      <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal">&times;</button>
             <h2 class="modal-title">Airbus A350XWB</h2>
           </div>
           <div class="modal-body">
-            <div class="alert alert-warning" role="alert"><strong>Atencion</strong>, se demora 3 Años en entrega.</div>
+            <div class="alert alert-warning" role="alert"><strong>Atención</strong>, se demora 3 Años en entrega.</div>
             <div class="row">
               <div class="col-xs-6">
                 <img src="Images/A350.jpg" alt="A350 ventana" class="img-thumbnail">
@@ -252,7 +222,7 @@ $(document).ready(function(){
 
               <div class="col-xs-6">
                 <p>Precio:<strong>304,8M US$</strong></p>
-                <p>Clasificacion:
+                <p>Clasificación:
                 <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
                 <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
                 <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -268,18 +238,18 @@ $(document).ready(function(){
             </div>
             <div class="row">
               <div class="col-xs-12">
-                <ul class="nav nav-tabs">
-                  <li class="active"><a href="#menu1">Descripcion</a></li>
-                  <li><a href="#menu2">Comentarios</a></li>
+                <ul id="myTab" class="nav nav-tabs">
+                  <li class="active"><a href="#home" data-target="#home, #home_else" data-toggle="tab">Descripción</a></li>
+                  <li><a href="#profile" data-target="#profile, #profile_else" data-toggle="tab">Comentarios</a>  </li>
                 </ul>
-                <div class="tab-content">
-                  <div id="menu1" class="tab-pane fade in active">
-                    <p id="comenydes">Un avion comercial a reacción de fuselaje ancho fabricada por Airbus. El A350 es la primera aeronave diseñada por Airbus en la que tanto el fuselaje como las estructuras del ala están formadas principalmente por materiales compuestos. Puede transportar entre 280 a 366 pasajeros, en configuración de tres clases, dependiendo de la variante, con un alcance maximo de 19.100 Kilometros y velocidad de Mach 0.85(903Km/h).</p>
+                <div id="myTabContent2" class="tab-content">
+                  <div class="tab-pane fade in active" id="home_else">
+                     <p id="comenydes">Un avion comercial a reacción de fuselaje ancho fabricada por Airbus. El A350 es la primera aeronave diseñada por Airbus en la que tanto el fuselaje como las estructuras del ala están formadas principalmente por materiales compuestos. Puede transportar entre 280 a 366 pasajeros, en configuración de tres clases, dependiendo de la variante, con un alcance maximo de 19.100 Kilometros y velocidad de Mach 0.85(903Km/h).</p>
                   </div>
-                  <div id="menu2" class="tab-pane fade">
+                  <div class="tab-pane fade" id="profile_else">
                     <div class="panel panel-default" id="comenydes">
-                      <div class="panel-heading">Boeing comento hace 1 mes</div>
-                      <div class="panel-body">horrible avion, deben ser problemas de fabrica...</div>
+                      <div class="panel-heading">Boeing comento hace 1 mes.</div>
+                      <div class="panel-body">horrible avión, deben ser problemas de fábrica...</div>
                     </div>
                     <textarea class="form-control" rows="3" placeholder="Ingresa tu comentario."></textarea>
                   </div>
@@ -303,7 +273,7 @@ $(document).ready(function(){
             <h2 class="modal-title">Boeing 777</h2>
           </div>
           <div class="modal-body">
-            <div class="alert alert-info" role="alert"><strong>Atencion</strong>, Tenenmos entrega INMEDIATA.</div>
+            <div class="alert alert-info" role="alert"><strong>Atención</strong>, Tenemos entrega INMEDIATA.</div>
             <div class="row">
               <div class="col-xs-6">
                 <img src="Images/B777.jpg" alt="b777 ventana" class="img-thumbnail">
@@ -311,7 +281,7 @@ $(document).ready(function(){
 
               <div class="col-xs-6">
                 <p>Precio:<strong>283,3M US$</strong></p>
-                <p>Clasificacion:
+                <p>Clasificación:
                 <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
                 <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
                 <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -327,18 +297,18 @@ $(document).ready(function(){
             </div>
             <div class="row">
               <div class="col-xs-12">
-                <ul class="nav nav-tabs">
-                  <li class="active"><a href="#menu1">Descripcion</a></li>
-                  <li><a href="#menu2">Comentarios</a></li>
+                <ul id="myTab" class="nav nav-tabs">
+                  <li class="active"><a href="#home" data-target="#home, #home_else" data-toggle="tab">Descripción</a></li>
+                  <li><a href="#profile" data-target="#profile, #profile_else" data-toggle="tab">Comentarios</a>  </li>
                 </ul>
-                <div class="tab-content">
-                  <div id="menu1" class="tab-pane fade in active">
-                    <p id="comenydes">Un avión comercial de reacción, bimotor, de largo alcance y fuselaje ancho fabricado por la compañía estadounidense Boeing Commercial Airplanes. Es el avión birreactor más grande del mundo y conocido frecuentemente como el «Triple Siete».Tiene capacidad para transportar más de 500 pasajeros y tiene un alcance hasta de 17.370 km.El 777 se ha convertido en uno de los modelos más vendidos de su fabricante. Debido al aumento del coste del combustible.</p>
+                <div id="myTabContent2" class="tab-content">
+                  <div class="tab-pane fade in active" id="home_else">
+                     <p id="comenydes">Un avión comercial de reacción, bimotor, de largo alcance y fuselaje ancho fabricado por la compañía estadounidense Boeing Commercial Airplanes. Es el avión birreactor más grande del mundo y conocido frecuentemente como el «Triple Siete».Tiene capacidad para transportar más de 500 pasajeros y tiene un alcance hasta de 17.370 km.El 777 se ha convertido en uno de los modelos más vendidos de su fabricante. Debido al aumento del coste del combustible.</p>
                   </div>
-                  <div id="menu2" class="tab-pane fade">
+                  <div class="tab-pane fade" id="profile_else">
                     <div class="panel panel-default" id="comenydes">
-                      <div class="panel-heading">Boeing cosdadmento hace 1 mes</div>
-                      <div class="panel-body">horrisdavion, deben ser problemas de fabrica...</div>
+                      <div class="panel-heading">Orlando Montoya comento hace 2 dias.</div>
+                      <div class="panel-body">Quisiera llenar ese avion de niñas...</div>
                     </div>
                     <textarea class="form-control" rows="3" placeholder="Ingresa tu comentario."></textarea>
                   </div>
@@ -362,7 +332,7 @@ $(document).ready(function(){
             <h2 class="modal-title">Boeing 787-DreamLiner</h2>
           </div>
           <div class="modal-body">
-            <div class="alert alert-danger" role="danger"><strong>Atencion</strong>, Por el momento no hay venta de ningun modelo.</div>
+            <div class="alert alert-danger" role="danger"><strong>Atención</strong>, Por el momento no hay venta de ningún modelo.</div>
             <div class="row">
               <div class="col-xs-6">
                 <img src="Images/Boeing787.jpg" alt="b787 ventana" class="img-thumbnail">
@@ -370,7 +340,7 @@ $(document).ready(function(){
 
               <div class="col-xs-6">
                 <p>Precio:<strong>297,5M US$</strong></p>
-                <p>Clasificacion:
+                <p>Clasificación:
                 <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
                 <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
                 <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -386,18 +356,19 @@ $(document).ready(function(){
             </div>
             <div class="row">
               <div class="col-xs-12">
-                <ul class="nav nav-tabs">
-                  <li class="active"><a href="#menu1">Descripcion</a></li>
-                  <li><a href="#menu2">Comentarios</a></li>
+
+                <ul id="myTab" class="nav nav-tabs">
+                  <li class="active"><a href="#home" data-target="#home, #home_else" data-toggle="tab">Descripción</a></li>
+                  <li><a href="#profile" data-target="#profile, #profile_else" data-toggle="tab">Comentarios</a>  </li>
                 </ul>
-                <div class="tab-content">
-                  <div id="menu1" class="tab-pane fade in active">
-                    <p id="comenydes">El Boeing 787, apodado «Dreamliner», es un avión de pasajeros de tamaño medio y fuselaje ancho desarrollado por el fabricante estadounidense Boeing Commercial Airplanes. La aeronave, de doble pasillo, puede transportar 323 pasajeros, viaja a una velocidad de Mach 0,85(903Km/h) y tiene un rango maximo de 15.700Km </p>
+                <div id="myTabContent2" class="tab-content">
+                  <div class="tab-pane fade in active" id="home_else">
+                     <p id="comenydes">El Boeing 787, apodado «Dreamliner», es un avión de pasajeros de tamaño medio y fuselaje ancho desarrollado por el fabricante estadounidense Boeing Commercial Airplanes. La aeronave, de doble pasillo, puede transportar 323 pasajeros, viaja a una velocidad de Mach 0,85(903Km/h) y tiene un rango maximo de 15.700Km.</p>
                   </div>
-                  <div id="menu2" class="tab-pane fade">
+                  <div class="tab-pane fade" id="profile_else">
                     <div class="panel panel-default" id="comenydes">
-                      <div class="panel-heading">Boeing comento hace 1 mes</div>
-                      <div class="panel-body">horrible avion, deben ser problemas de fabrica...</div>
+                      <div class="panel-heading">Airbus comento hace 1 mes.</div>
+                      <div class="panel-body">COPIA DEL A350.</div>
                     </div>
                     <textarea class="form-control" rows="3" placeholder="Ingresa tu comentario."></textarea>
                   </div>
@@ -429,7 +400,7 @@ $(document).ready(function(){
 
               <div class="col-xs-6">
                 <p>Precio:<strong>65,5M US$</strong></p>
-                <p>Clasificacion:
+                <p>Clasificación:
                 <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
                 <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
                 <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -445,18 +416,19 @@ $(document).ready(function(){
             </div>
             <div class="row">
               <div class="col-xs-12">
-                <ul class="nav nav-tabs">
-                  <li class="active"><a href="#menu1">Descripcion</a></li>
-                  <li><a href="#menu2">Comentarios</a></li>
+
+                <ul id="myTab" class="nav nav-tabs">
+                  <li class="active"><a href="#home" data-target="#home, #home_else" data-toggle="tab">Descripción</a></li>
+                  <li><a href="#profile" data-target="#profile, #profile_else" data-toggle="tab">Comentarios</a>  </li>
                 </ul>
-                <div class="tab-content">
-                  <div id="menu1" class="tab-pane fade in active">
-                    <p id="comenydes">La tecnología del avión privado G650 es la más avanzada en el cielo. Su cabina de mando Planeview II™ viene equipada con el sistema de administración de vuelo, el modo de descenso de emergencia automático, el radar meteorológico 3-D, controles de vuelo avanzados; una completa variedad de sofisticadas herramientas tecnológicas de última generación para mejorar la conciencia situacional del piloto y aumentar su seguridad. Solo exiten 51 unidades, tiene un rango de 12,960 Kms y una velocidad maxima de Mach 0.925 (982Km/h)</p>
+                <div id="myTabContent2" class="tab-content">
+                  <div class="tab-pane fade in active" id="home_else">
+                     <p id="comenydes">La tecnología del avión privado G650 es la más avanzada en el cielo. Su cabina de mando Planeview II™ viene equipada con el sistema de administración de vuelo, el modo de descenso de emergencia automático, el radar meteorológico 3-D, controles de vuelo avanzados; una completa variedad de sofisticadas herramientas tecnológicas de última generación para mejorar la conciencia situacional del piloto y aumentar su seguridad. Solo exiten 51 unidades, tiene un rango de 12,960 Kms y una velocidad maxima de Mach 0.925 (982Km/h).</p>
                   </div>
-                  <div id="menu2" class="tab-pane fade">
+                  <div class="tab-pane fade" id="profile_else">
                     <div class="panel panel-default" id="comenydes">
-                      <div class="panel-heading">Boeing comento hace 1 mes</div>
-                      <div class="panel-body">horrible avion, deben ser problemas de fabrica...</div>
+                      <div class="panel-heading">No hay comentarios aun, se el primero en comentar...</div>
+                      <div class="panel-body"></div>
                     </div>
                     <textarea class="form-control" rows="3" placeholder="Ingresa tu comentario."></textarea>
                   </div>
@@ -488,7 +460,7 @@ $(document).ready(function(){
 
               <div class="col-xs-6">
                 <p>Precio:<strong>57.5M US$</strong></p>
-                <p>Clasificacion:
+                <p>Clasificación:
                 <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
                 <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
                 <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -504,18 +476,19 @@ $(document).ready(function(){
             </div>
             <div class="row">
               <div class="col-xs-12">
-                <ul class="nav nav-tabs">
-                  <li class="active"><a href="#menu1">Descripcion</a></li>
-                  <li><a href="#menu2">Comentarios</a></li>
+
+                <ul id="myTab" class="nav nav-tabs">
+                  <li class="active"><a href="#home" data-target="#home, #home_else" data-toggle="tab">Descripción</a></li>
+                  <li><a href="#profile" data-target="#profile, #profile_else" data-toggle="tab">Comentarios</a>  </li>
                 </ul>
-                <div class="tab-content">
-                  <div id="menu1" class="tab-pane fade in active">
-                    <p id="comenydes">El Falcon 8X cuenta con la cabina más larga de cualquier avión Falcon, extendiéndose más de 42 pies, más un alcance de más de 7,400 millas náuticas (11,945 km) y alcanza una velocidad de Mach 0.90 (980Km/h).  Derivado del 7X, el nuevo avión todavía está en desarrollo, con el primer vuelo programado para principios del próximo año y con las entregas programadas para el 2016.</p>
+                <div id="myTabContent2" class="tab-content">
+                  <div class="tab-pane fade in active" id="home_else">
+                     <p id="comenydes">El Falcon 8X cuenta con la cabina más larga de cualquier avión Falcon, extendiéndose más de 42 pies, más un alcance de más de 7,400 millas náuticas (11,945 km) y alcanza una velocidad de Mach 0.90 (980Km/h).  Derivado del 7X, el nuevo avión todavía está en desarrollo, con el primer vuelo programado para principios del próximo año y con las entregas programadas para el 2016.</p>
                   </div>
-                  <div id="menu2" class="tab-pane fade">
+                  <div class="tab-pane fade" id="profile_else">
                     <div class="panel panel-default" id="comenydes">
-                      <div class="panel-heading">Boeing comento hace 1 mes</div>
-                      <div class="panel-body">horrible avion, deben ser problemas de fabrica...</div>
+                      <div class="panel-heading">Esteban Silva comento hace 10 dias.</div>
+                      <div class="panel-body">El mejor avión que he tenido... muy contento.</div>
                     </div>
                     <textarea class="form-control" rows="3" placeholder="Ingresa tu comentario."></textarea>
                   </div>
@@ -530,8 +503,6 @@ $(document).ready(function(){
         </div>  
       </div>
     </div>
-
-
   </div>
 </body>
 </html>
